@@ -13,4 +13,125 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-osnova);
+  font-weight: var(--font-weight-normal);
+  font-variation-settings: var(--font-weight-normal);
+}
+body {
+  background-image: var(--background-gradient);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex; /* включаем Flexbox */
+  justify-content: center; /* центрируем по горизонтали */
+  align-items: center; /* центрируем по вертикали */
+  min-height: 100vh; /* минимальная высота — вся видимая область */
+  margin: 0;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  flex-direction: column; /* выстраиваем элементы в колонку */
+  justify-content: center; /* центрируем по вертикали */
+  align-items: center; /* центрируем по горизонтали */
+  height: 368px;
+  width: var(--block-width);
+  background-color: #fff;
+  font-family: var(--font-accent);
+  gap: 20px;
+  border: 2px solid black;
+  margin-bottom: 98px;
+}
+.zag_head {
+  font-family: var(--font-accent);
+  font-size: 65px;
+}
+.min_zag_head {
+  font-size: 23px;
+}
+.cards {
+  background-color: #fff;
+  border: 2px solid black;
+  width: var(--block-width);
+}
+.card-post-defolt {
+  display: flex;
+  flex-direction: column;
+}
+.title-cards-post-defolt {
+  height: 30px;
+  font-family: var(--font-weight-heading);
+  font-size: 18px;
+}
+.title-cards-post-defolt-text {
+  padding-left: 10px;
+  padding-top: 4px;
+  font-family: var(--font-weight-heading);
+  font-size: 18px;
+}
+.post-image-container-defolt {
+  position: relative;
+  display: inline-block;
+}
+.post-defolt {
+  border-width: 2px 0px 2px 0px;
+  border-style: solid;
+  border-color: #000000;
+  display: block;
+  margin-bottom: 20px;
+}
+.card__badge {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  color: black;
+
+  font-family: var(--font-accent);
+  font-size: 14px;
+  text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white,
+    -1px 1px 0 white;
+  opacity: 50%;
+}
+.p_card-post-defolt {
+  font-family: var(--font-weight-normal);
+  font-size: 18px;
+}
+.p_card-post-defolt-big {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+.p_card-post-defolt-small {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+.card_button {
+  margin-left: auto;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+.card__icon-button {
+  border: none;
+  background-color: white;
+  width: 169px;
+  height: 38px;
+  display: flex;
+  padding: 0;
+}
+.card__icon-button_img {
+  width: 27px;
+  height: 24px;
+  margin-top: 7px;
+  margin-right: 12px;
+}
+.button__text {
+  width: 130px;
+  border: 2px solid black;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
