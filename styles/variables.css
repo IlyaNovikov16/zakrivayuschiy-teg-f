@@ -2,8 +2,8 @@
 :root {
   --font-osnova: "Inter", sans-serif;
   --font-accent: "PressStart2P-Regular";
-  --font-weight-normal: 410; /* обычный текст */
-  --font-weight-heading: 715; /* заголовки */
+  --font-weight-normal: 410;
+  --font-weight-heading: 715;
 }
 :root {
   --background-gradient: repeating-linear-gradient(
@@ -24,4 +24,12 @@
 }
 :root {
   --block-width: clamp(375px, 700px, 700px);
+}
+:root {
+  --contour-color: #000;
+  --main-body-color: transparent;
+  --core-color: transparent;
+  --sparks-color: transparent;
+  --hover-color: #000;
+  --animation-fill-color: #ff0000;
 }
