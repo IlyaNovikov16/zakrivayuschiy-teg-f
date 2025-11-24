@@ -15,7 +15,7 @@
   min-block-size: 100dvb;
   font-family: var(--font-osnova);
   font-weight: var(--font-weight-normal);
-  font-variation-settings: var(--font-weight-normal);
+  font-variation-settings: "wght" var(--font-weight-normal);
 }
 body {
   background-image: var(--background-gradient);
@@ -27,14 +27,13 @@ body {
   min-height: 100vh;
   margin: 0;
   flex-direction: column;
-  overflow-x: hidden;
 }
 .header_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 368px;
+  min-height: 368px;
   width: var(--block-width);
   background-color: #fff;
   font-family: var(--font-accent);
@@ -63,14 +62,15 @@ body {
   border: 2px solid black;
 }
 .title-cards-post {
-  height: 30px;
-  font-family: var(--font-weight-heading);
+  font-family: var(--font-osnova);
+  font-variation-settings: "wght" var(--font-weight-heading);
   font-size: 18px;
 }
 .title-cards-post-text {
   padding-left: 10px;
   padding-top: 4px;
-  font-family: var(--font-weight-heading);
+  font-family: var(--font-osnova);
+  font-variation-settings: "wght" var(--font-weight-heading);
   font-size: 18px;
 }
 .post-image-container {
@@ -97,8 +97,10 @@ body {
   opacity: 50%;
 }
 .p_card-post {
-  font-family: var(--font-weight-normal);
+  font-family: var(--font-osnova);
+  font-variation-settings: "wght" var(--font-weight-normal);
   font-size: 18px;
+  margin-top: 25px;
 }
 .p_card-post-big {
   margin-left: 25px;
@@ -202,7 +204,7 @@ body {
 .dialog[open] {
   display: flex;
   width: 353px;
-  height: 191px;
+  min-height: 191px;
   flex-direction: column;
   align-items: center;
   padding: 0;
@@ -392,7 +394,7 @@ body {
   .header_content {
     width: 375px;
     max-width: 375px;
-    height: 327px;
+    min-height: 327px;
     box-sizing: border-box;
   }
   .zag_head {
@@ -413,6 +415,7 @@ body {
   }
   .title-cards-post {
     height: auto;
+    width: 351px;
   }
   .post-image-container {
     width: 100%;

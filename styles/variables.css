@@ -1,9 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-osnova: "Inter", sans-serif;
-  --font-accent: "PressStart2P-Regular";
-  --font-weight-normal: 410;
-  --font-weight-heading: 715;
+  --font-osnova: "Inter", Arial, Helvetica, sans-serif;
+  --font-accent: "PressStart2P", "Arial Black", Impact, sans-serif;
+  --font-weight-heading: 715px;
+  --font-weight-normal: 400px;
 }
 :root {
   --background-gradient: repeating-linear-gradient(
