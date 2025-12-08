@@ -1,11 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-osnova: "Inter", Arial, Helvetica, sans-serif;
-  --font-accent: "PressStart2P", "Arial Black", Impact, sans-serif;
-  --font-weight-heading: 715px;
-  --font-weight-normal: 400px;
-}
-:root {
+  --font-osnova: "Inter-Variable";
+  --font-accent: "PressStart2P";
+  --font-weight-heading: 700;
+  --font-weight-normal: 400;
   --background-gradient: repeating-linear-gradient(
       90deg,
       #d3d3d3 0,
@@ -21,11 +19,7 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-}
-:root {
-  --block-width: clamp(375px, 700px, 700px);
-}
-:root {
+  --block-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
   --contour-color: #000;
   --main-body-color: transparent;
   --core-color: transparent;
