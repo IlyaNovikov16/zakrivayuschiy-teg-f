@@ -29,7 +29,8 @@ body {
   border: 2px solid black;
   margin-bottom: 98px;
   margin-top: 100px;
-  padding: 136px 0;
+  padding-top: 130px;
+  padding-bottom: 130px;
   box-sizing: border-box;
 }
 
@@ -99,12 +100,11 @@ body {
   top: 25px;
   right: 25px;
   color: black;
-  font-family: var(--font-accent), "Press Start 2P", fantasy;
+  font-family: var(--font-accent);
   font-size: 14px;
   text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white,
     -1px 1px 0 white;
-  opacity: 0.5;
-  mix-blend-mode: hard-light;
+  opacity: 50%;
 }
 
 .p_card-post {
@@ -118,6 +118,13 @@ body {
   margin-right: 25px;
   margin-bottom: 25px;
   gap: 25px;
+}
+
+.card-post-text {
+  font-family: var(--font-osnova), "Inter", Arial, sans-serif;
+  font-variation-settings: "wght" var(--font-weight-normal);
+  font-size: 18px;
+  margin: 0;
 }
 
 .p_card-post-big {
@@ -222,7 +229,6 @@ body {
 .dialog[open] {
   display: flex;
   width: 353px;
-  min-height: 191px;
   flex-direction: column;
   align-items: center;
   padding: 0;
@@ -302,102 +308,6 @@ body {
   box-shadow: 2px 2px 0 #000;
 }
 
-.like-icon .contour {
-  fill: var(--contour-color);
-  transition: fill 0.1s linear;
-}
-
-.like-icon .main-body {
-  fill: transparent;
-  transition: fill 0.3s linear;
-}
-
-.like-icon .core {
-  fill: transparent;
-  transition: fill 0.3s 0.03s linear;
-}
-
-.like-icon .sparks {
-  opacity: 0;
-}
-
-.like-icon {
-  --main-body-color: transparent;
-  --core-color: transparent;
-  transform-origin: center;
-}
-
-.card__icon-button:hover .like-icon {
-  --core-color: var(--hover-color);
-  --main-body-color: var(--hover-color);
-}
-
-.card__icon-button:hover .main-body {
-  transition-delay: 0.05s;
-}
-
-.card__icon-button:hover .core {
-  transition-delay: 0s;
-}
-
-.card__icon-button:active .like-icon {
-  --core-color: var(--animation-fill-color);
-  --main-body-color: var(--animation-fill-color);
-}
-
-.card__icon-button:active .main-body {
-  transition-delay: 0.05s;
-}
-
-.card__icon-button:active .core {
-  transition-delay: 0s;
-}
-
-.like-icon.is-liked {
-  --core-color: var(--animation-fill-color);
-  --main-body-color: var(--animation-fill-color);
-  --contour-color: var(--animation-fill-color);
-  --sparks-color: var(--animation-fill-color);
-}
-
-.like-icon.is-liked .core {
-  transition-delay: 0s;
-}
-
-.like-icon.is-liked .main-body {
-  transition-delay: 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  transition: fill 0.3s linear 0.06s;
-}
-
-.like-icon.is-liked .sparks {
-  opacity: 1;
-  transition: opacity 0.3s linear 0.3s;
-}
-
-.like-icon.is-liked .heart {
-  animation: heart-scale 0.3s 0.1s ease-in;
-}
-
-.like-icon.is-liked:hover {
-  --core-color: var(--animation-fill-color);
-  --main-body-color: var(--animation-fill-color);
-}
-
-@keyframes heart-scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 @media (width <= 375px) {
   .page {
     max-width: 375px;
@@ -405,6 +315,8 @@ body {
   .header_content {
     width: 375px;
     max-width: 375px;
+    padding-top: 122px;
+    padding-bottom: 122px;
 
     box-sizing: border-box;
   }
@@ -436,16 +348,14 @@ body {
     width: 100%;
     max-width: 100%;
   }
+  .card__badge {
+    top: 28px;
+    right: 25px;
+  }
   .p_card-post-big,
   .p_card-post-small {
     margin-left: 15px;
     margin-right: 15px;
-  }
-
-  .card__badge {
-    top: 20px;
-    right: 15px;
-    font-size: 12px;
   }
   .under-batton {
     width: 306px;
@@ -458,5 +368,9 @@ body {
   }
   .dialog_close_button {
     width: 257px;
+  }
+  .under-batton svg {
+    width: 28px;
+    height: 28px;
   }
 }
